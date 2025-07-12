@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherSchools - Question 16</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex; /* Default: horizontal layout for larger screens */
+            gap: 20px; /* Space between divs */
+            max-width: 900px;
+            margin: 0 auto; /* Center the container */
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .box {
+            flex: 1; /* Allows boxes to grow and shrink */
+            min-width: 180px; /* Minimum width before wrapping/stacking */
+            padding: 25px;
+            background-color: #e6f7ff; /* Light blue background */
+            border: 1px solid #b3e0ff; /* Blue border */
+            border-radius: 6px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #0056b3;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        /* Media Query for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Change to vertical layout */
+                align-items: center; /* Center items when stacked vertically */
+            }
+
+            .box {
+                width: 90%; /* Make boxes take up more width when stacked */
+                max-width: 350px; /* Limit max width for readability on small screens */
+                margin-bottom: 15px; /* Add space between stacked boxes */
+            }
+
+            /* Remove margin-bottom from the last box when stacked */
+            .box:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .box {
+                padding: 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Question 16: Responsive Div Layout</h1>
+
+    <p style="text-align: center; margin-bottom: 30px;">
+        Resize your browser window to see the layout change from horizontal to vertical.
+    </p>
+
+    <div class="container">
+        <div class="box">Section A</div>
+        <div class="box">Section B</div>
+        <div class="box">Section C</div>
+        <div class="box">Section D</div>
+    </div>
+</body>
+</html>
